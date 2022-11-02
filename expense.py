@@ -43,7 +43,7 @@ def new_expense(*args):
         print("Here are the users : ")
         print(data)
         return False
-    if not infos["amount"].is_numeric():
+    if not infos["amount"].isnumeric():
         print("Error: Amount should be numeric")
         return False
     involved_list = []
