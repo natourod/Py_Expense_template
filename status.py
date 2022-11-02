@@ -19,6 +19,7 @@ def show_status():
                 u[1] = u[1] - amount + debt
         for u in users :
             for s in users :
-                if u[1] == -1 * s[1] and u[1] > 0 :
+                if u[1] == -1 * s and u[1] > 0 :
+                    continue
                     
     return
